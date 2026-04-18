@@ -75,11 +75,12 @@ a{
 
 .commentcontainer{
     padding-left: 20px;
+    font-size: 18px;
+
 }
 
-form{
-    /* padding-left: 20px; */
-
+#commentone{
+    width: 510px;
 }
 
 #formbodycontainer{
@@ -99,31 +100,67 @@ form{
 
 .details{
     display: flex;
-    gap: 30px;
+    gap: 50px;
+}
+
+legend{
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+label, legend, #actiontext, .commentcontainer{
+    font-family:  sans-serif;
+     
 }
 
 label{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 7px;
     letter-spacing: 1px;
+    font-size: 10px;
+    
 }
 
+
 input{
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    height: 20px;
 }
+
+input:focus{
+    border: 1px solid blue;
+    box-shadow: 0 2px 2px -1px rgba(0,0,255,0.3);
+    outline: none;
+}
+
+input:user-invalid{
+    box-shadow: 0 2px 1px -1px rgba(250,0,0.3);
+}
+
 .actionbtncontainer{
     padding-top: 20px;
     padding-left: 20px;
 }
 
 button[type="submit"]{
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: bold;
     background-color: #596D48;
     border: none;
     border-radius: 5px;
     padding: 10px 37px 10px 37px;
+}
+
+#actiontext{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#login{
+    color: #596d48;
 }
 
 

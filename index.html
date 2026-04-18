@@ -19,44 +19,45 @@
         </div>
         <div class="formcontainer">
             <div class="commentcontainer">
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus amet culpa aliquam? Tempora animi, asperiores vitae alias autem adipisci atque accusantium quos, dicta fugiat quaerat. Consequatur tenetur dolor illo excepturi.</p>
+                <div id="commentone">
+                        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
                 </div>
-                <div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, ex impedit magnam tempore consectetur molestiae, eaque illum possimus et architecto laudantium. Ipsam, sint ullam. Eaque illum ducimus at officiis facere.</p>
+                <div id="commenttwo">
+                    <p>You <em>know<em> you want to.</p>
                 </div>
             </div>
             <div class="form">
-                <form action="www.httpbin.org/post" method="post">
+                <form action="https://httpbin.org/post" method="post">
                 <div id="formbodycontainer">    
                 <div id="formbody">
                     <legend>Let's do this!</legend>
                     <div class="details">
                         <div>
                             <label for="fname">FIRST NAME</label><br>
-                            <input type="text" name="first_name" id="fname"><br><br>
+                            <input type="text" name="first_name" id="fname" maxlength="20"><br><br>
 
                             <label for="email">EMAIL</label><br>
-                            <input type="mail" name="email" id="email"><br><br>
+                            <input type="email" name="email" id="email"><br><br>
 
                             <label for="passwd">PASSWORD</label><br>
-                            <input type="password" name="password" id="passwd"><br><br>
+                            <input type="password" name="password" id="passwd" maxlength="8"><br><br>
                         </div>
                         <div>
                             <label for="lname">LAST NAME</label><br>
-                            <input type="text" name="last_name" id="lname"><br><br>
+                            <input type="text" name="last_name" id="lname" maxlength="20"><br><br>
 
                             <label for="phone">PHONE NUMBER</label><br>
                             <input type="number" name="phone" id="phone"><br><br>
 
                             <label for="confpasswd">CONFIRM PASSWORD</label><br>
-                            <input type="password" name="confpasswd" id="confpasswd"><br><br>
+                            <input type="password" name="confpasswd" id="confpasswd" maxlength="8"><br><br>
                         </div>
                     </div>
                 </div>
                 </div>
                 <div class="actionbtncontainer">
                     <button type="submit">Create Account</button>
+                    <p id="actiontext">Already have an account? <span id="login">Log in</span></p>
                 </div>
                 </form>
             </div>
